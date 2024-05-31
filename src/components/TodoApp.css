@@ -1,0 +1,104 @@
+/* src/components/TodoApp.css */
+body {
+  background: linear-gradient(to right, #b993d6, #7f98c9);
+  font-family: cursive;
+}
+
+.todo-app {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  background: linear-gradient(to right, #a381bd, #8ca6db);
+}
+
+.task-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.com {
+  height: 100px;
+  overflow-y: auto;
+}
+
+.sortButton {
+  background-color: #a381bd;
+  border: 2px solid aliceblue;
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  height: 100px;
+  overflow-y: auto;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #203a43;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+.task-list li.completed span {
+  text-decoration: line-through;
+}
+
+.filter {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.imgStyle {
+  width: max-content;
+  height: max-content;
+  background-color: #8ca6db;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  margin-top: 5px;
+}
+
+.button img {
+  transition: transform 0.5s;
+}
+
+.rotate360 {
+  animation: rotate360 1s forwards;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
